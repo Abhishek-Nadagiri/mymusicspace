@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(nav\ background.jpg);
+    font-size: 18px;
+}
+nav ul li a {
+    color: rgb(245, 252, 245);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: rgb(10, 26, 101);
+}
+
+/* Headers */
+h1, h2 {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    color: wheat;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+
+/* Artist Portal */
+.container {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.box {
+    width: 200px;
+    transition: 0.3s;
+}
+.box img {
+    width: 100%;
+    border-radius: 5px;
+}
+.box:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* Embeds */
+iframe {
+    border-radius: 12px;
+    margin: 15px 5px;
+    width: calc(100% / 3 - 20px);
+    height: 350px;
+}
+iframe:nth-child(3) {
+    margin-right: 0;
+}
+
+/* Button */
+.button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin: 10px auto;
+    display: block;
+    transition: background-size 0.4s ease-in-out;
+}
+.button:hover {
+    background-size: 200% auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .box {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        font-size: 16px;
+    }
+    iframe {
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+}
