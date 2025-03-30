@@ -6,47 +6,122 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>My Music Space</title>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="website logo" width="100%" height="130px">
-
-        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="main.png" alt="Bootstrap" width="210" height="40"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#albums">Albums</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#artist">Artists</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      latest
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://open.spotify.com/playlist/37i9dQZF1DWWwrjLPC16W7" target="_blank">Telugu</a></li>
+                      <li><a class="dropdown-item" href="https://open.spotify.com/playlist/37i9dQZF1DXd8cOUiye1o2" target="_blank">Hindi</a></li>
+                      <li><a class="dropdown-item" href="https://open.spotify.com/playlist/37i9dQZF1DWVo4cdnikh7Z#login" target="_blank">Tamil</a></li>
+                      <li><a class="dropdown-item" href="https://open.spotify.com/playlist/37i9dQZF1DWZqTcNLmb3sH" target="_blank">Kannada</a></li>
+                      <li><a class="dropdown-item" href="https://open.spotify.com/playlist/66FnIB7gJaycnrCtnqXofL" target="_blank">English</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <nav>
-        <ul>
-            <li> <a href="#">HOME</a></li>
-            <li> <a href="https://open.spotify.com/playlist/37i9dQZF1DWWwrjLPC16W7?si=ESBtw3_RTqmE3dsAyE3DhQ" target="_blank">Telugu</a></li>
-            <li> <a href="https://open.spotify.com/playlist/37i9dQZF1DXd8cOUiye1o2?si=gO9wotPrRMmxgMgbYn2ezw" target="_blank">Hindi</a></li>
-            <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX1i3hvzHpcQV?si=OLvVRqYiRD2gMYSg7iPyTQ" target="_blank">Tamil</a></li>
-            <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWSxEc2RjBCQv?si=X6XXk2pTT8umGKOIgDtzrw" target="_blank">Malayalam</a></li>
-        </ul>
-    </nav>
-    <br>
-    <section>
-        <h1>NEW  RELEASES</h1>
-        <iframe style="border-radius:20px" src="https://open.spotify.com/embed/track/6CvW7N8JjBHmwEfGz2Yxhk?utm_source=generator" width="30%" height="352" frameBorder="10px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <iframe style="border-radius:20px" src="https://open.spotify.com/embed/track/7KB0zREYCrQU3refE5x0M3?utm_source=generator&theme=0" width="30%" height="352" frameBorder="10px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3r8Ee4r59VzgSuNExdqKNj?utm_source=generator" width="30%" height="352" frameBorder="10px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section id="about">
+        <div class="head">
+        <h1>
+            "Music gives a soul <br>to the universe, <br>wings to the mind <br>flight to the imagination, <br>and life to everything."
+        </h1>
+        </div>
     </section>
-    <br>
+    <section id="home">
+        <h1 style="color: #010101;"><br>ALL TIME DOMINANCE</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <a href="https://open.spotify.com/album/4g8skOXffqxzYMOlEjlSnw" target="_blank"><img src="kalki2.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white; margin-top: 30px; font-size: 40px;">KALKI 2898AD</h5>
+                  <p style="color: white; margin-top: 30px; font-size: 20px;">Click on the pic to play the album</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <a href="https://open.spotify.com/album/0a183xiCHiC1GQd8ou7WXO" target="_blank"><img src="animal2.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white; margin-top: 30px; font-size: 40px;">Animal</h5>
+                  <p style="color: white; margin-top: 30px; font-size: 20px;">Click on the pic to play the album</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://open.spotify.com/album/6yD4jB6M96R4eYfIH36cne" target="_blank"><img src="salaar.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white; margin-top: 30px; font-size: 40px;">Salaar</h5>
+                  <p style="color: white; margin-top: 30px; font-size: 20px;">Click on the pic to play the album</p>
+                </div>
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id="albums">
+      <h1 style="color: #06080a;"><br>My Classic List</h1>
+      <div class="song">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rG9ZufN5XfgvDswhxYoZQ?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2kRzgmBlmhvFvCEgMHltWz?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3H43T5swYywvcdCBFiDgW6?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7F8RNvTQlvbeBLeenycvN6?utm_source=generator&theme=0" width="40%" height="12" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+      
     
-    <section>
-        <h1>ARTIST PORTAL</h1>
-        <h2>BOLLYWOOD ROCKERS</h2>
+    
+    <section id="artist">
+        <h1 style="color: #0a0a06; margin-top: 30px;">ARTIST PORTAL</h1>
+        <h2 style="color: #0a0904; margin-top: 40px;">BOLLYWOOD ROCKERS</h2>
        <div class="container">
-        <div class="box"><a href="arijit/arijit.html" target="_blank"><img src="arijit.jpg" alt=""></a></div>
-        <div class="box"><a href="https://www.jiosaavn.com/artist/shreya-ghoshal-songs/lIHlwHaxTZ0_"target="_blank"><img src="shreya.jpg" alt=""></a></div>
-        <div class="box"><a href="https://www.jiosaavn.com/artist/pritam-songs/OaFg9HPZgq8_"target="_blank"><img src="pritam.jpg" alt=""></a></div>
-        <div class="box"><a href="https://www.jiosaavn.com/artist/mohit-chauhan-songs/YNIh2poJKsY_"target="_blank"><img src="mohit.jpg" alt=""></a></div>
+        <div class="box"><a href="arijit/arijit.html" target="_blank"><img src="arijit.jpg" alt=""></a><h2>Arijit Singh</h2></div>
+        <div class="box"><a href="https://www.jiosaavn.com/artist/shreya-ghoshal-songs/lIHlwHaxTZ0_"target="_blank"><img src="shreya.jpg" alt=""></a><h2>Shreya Ghoshal</h2></div>
+        <div class="box"><a href="https://www.jiosaavn.com/artist/pritam-songs/OaFg9HPZgq8_"target="_blank"><img src="pritam.jpg" alt=""></a><h2>Pritam</h2></div>
+        <div class="box"><a href="https://www.jiosaavn.com/artist/mohit-chauhan-songs/YNIh2poJKsY_"target="_blank"><img src="mohit.jpg" alt=""></a><h2>Mohit Chauhan</h2></div>
        </div>
             
 
     </section>
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
     
 </body>
 </html>
